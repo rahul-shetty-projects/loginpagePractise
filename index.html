@@ -257,7 +257,7 @@
 							</div>
 							<div class="form-group">
 								<p class="text-center text-white">(username is <b><i>rahulshettyacademy</i></b> and
-									Password is <b><i>learning</i></b>)</p>
+									Password is <b><i>Learning@830$3mK2</i></b>)</p>
 							</div>
 						</form>
 					</div>
@@ -311,8 +311,16 @@
 			signInBtn.value = "Signing ..";
 			setTimeout(function () {
 				if (username.value == "rahulshettyacademy"
-					&& password.value == "learning") {
+					&& password.value == "Learning@830$3mK2") {
 					window.location.href = redirectURL;
+				} else if (username.value == "rahulshettyacademy"
+					&& password.value == "learning") {
+					alertMsg.style.display = "block";
+					alertMsg.innerHTML = "Old password \"learning\" is no longer valid. Please use the new password <strong>\"Learning@830$3mK2\"</strong>.";
+					setTimeout(function () {
+						alertMsg.style.display = "none";
+					}, 20000)
+					signInBtn.value = "Sign In";
 				} else {
 					alertMsg.style.display = "block";
 					alertMsg.innerHTML = "<strong>Incorrect</strong> username/password.";
