@@ -157,8 +157,6 @@
 		}
 
 		a.blinkingText {
-			float: right;
-			margin-top: 12px;
 			font-weight: bold;
 			padding: 10px;
 			background: #27b35f;
@@ -189,6 +187,20 @@
 				margin-top: 0px;
 			}
 		}
+
+		body {
+			position: relative;
+		}
+
+		.float-right {
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: end;
+			gap: 6px;
+		}
 	</style>
 </head>
 
@@ -197,8 +209,10 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVBTJWPP" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	<a href="https://rahulshettyacademy.com/documents-request" class="blinkingText" target="_blank">Free Access to
-		InterviewQues/ResumeAssistance/Material</a>
+	<div class="float-right"><a href="https://rahulshettyacademy.com/documents-request" class="blinkingText"
+			target="_blank">Free Access to InterviewQues/ResumeAssistance/Material</a>
+		<a href="https://techsmarthire.com/" class="blinkingText" target="_blank">Get Shortlisted by Recruiters - Take QA Skill Assessments on TechSmartHire</a>
+	</div>
 	<div id="login">
 		<h3 class="text-center pt-5">
 			<span class="icon-circled">
